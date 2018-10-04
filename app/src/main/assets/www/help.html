@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+   function showAndroidCameraHere() {  
+     Android.showAndroidCamera();  
+   }       
+ function getImage(src) {  
+   var img = document.createElement("IMG");  
+      img.setAttribute("src", src);
+   img.setAttribute("width", "94");  
+   img.setAttribute("height", "70");  
+   img.setAttribute("alt", "Your image here");  
+   document.getElementById('imageHolder').appendChild(img);  
+ }  
+ </script>
+</head>
+<body>
+<form id="formContainer">
+<h2>capture=camera</h2>
+<button type="button" onClick="showAndroidCameraHere()">Try it</button>
+<div id="imageHolder" width="100px" height="80px"></div>
+</form>
+</body>
+</html>
